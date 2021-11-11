@@ -95,13 +95,12 @@ ul li{
     appearance: none;
     border-radius: 15px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #000;
     cursor: pointer;
     display: inline-block;
     line-height: normal;
     min-width: 0;
     outline: none;
-    text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
@@ -122,10 +121,10 @@ ul li{
 }
 /*home-page*/
 .home-page{
-    height: 600px;
+    height: 700px;
 }
 .home-page .carousel-inner .carousel-item{
-    height: 600px;
+    height: 700px;
 }
 .home-page .carousel-inner .carousel-item img{
     width: 100%;
@@ -136,10 +135,10 @@ ul li{
    margin-bottom: 150px !important;
 }
 .home-page .carousel-item .carousel-caption p{
-    font-size: 18px;
+    font-size: 25px;
 }
 .ml12 {
-    font-weight: 800;
+    font-weight: 900;
     font-size: 44px;
     text-transform: uppercase;
     letter-spacing: 0.5em;
@@ -230,6 +229,9 @@ header .left-side-info a , header .left-side-info  i{
 nav{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+.navbar .nav-link{
+    margin: 0 5px;
+}
 .navbar .nav-link.active{
     color: #E35A4A !important;
 }
@@ -301,6 +303,9 @@ nav .request-btn a:hover, .home-page-btn a:hover{
 .about{
     height: max-content;
 }
+.law-firm-info h2{
+    text-decoration:underline #E35A4A;
+}
 .commitment h2 , .practice h2 ,.atorney-page h2 , .our-latest-news h2 ,.contact-us h2 ,.blog-details h2{
     text-align: center;
     text-decoration:underline #E35A4A;
@@ -326,8 +331,8 @@ nav .request-btn a:hover, .home-page-btn a:hover{
 .about__container{
     display: flex;
 }
-.about__data{
-    padding: 15px;
+.about__data h2{
+    padding: 15px 0;
 }
 .about__img-overlay img{
     border-radius: 8px;
@@ -546,8 +551,9 @@ section .letters{
     border-radius: 8px;
 }
 .our-latest-news h5{
+    margin-top: 10px;
     font-size: 22px;
-    padding: 10px 0;
+    padding: 12px 0;
 }
 .read-more  {
     font-size: 20px;
@@ -568,6 +574,7 @@ section .letters{
 }
 .our-special-clients .row .col{
     height: 150px;
+    margin-top: 30px;
 }
 .our-special-clients .row .col img{
     width: 100%;
@@ -608,7 +615,7 @@ section .letters{
 /*========map ==========*/
 .map iframe{
     width: 100%;
-    height: 250px;
+    height: 400px;
 }
 /*=============== FOOTER ===============*/
 footer{
@@ -739,6 +746,21 @@ footer .footer-items ul li a:hover{
 .contact-page i{
     width: 20px;
 }
+.contact-media-icons i{
+    color: #FFF;
+    background-color: #E35A4A;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding-top: 7px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.contact-media-icons i:hover{
+    color: #E35A4A;
+    background-color: #FFF;
+    border: 1px solid #E35A4A;
+}
 /*================================= blog-details Page =================================*/
 .blog-details .about__img-one{
     width: 600px;
@@ -747,6 +769,10 @@ footer .footer-items ul li a:hover{
 .blog-details .row{
     display: flex;
     flex-direction: row;
+}
+.blog-item h3{
+    font-size: 22px;
+    padding: 20px 0;
 }
 .comments-Lawyers img{
     width: 100px;
