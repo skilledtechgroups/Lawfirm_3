@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.jpeg" type="image/png">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap cdn Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Boxicon-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!--Jquery File-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!--Animation Plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <title>Law Firm</title>
+</head>
+<body onload="Loader()">
+    <!--===== Loading-Spinner =====-->
+    <div class="spinner" id="sp">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+    <!--===== End-Loading-Spinner =====-->
+    <!-- ================ Page-Content ================-->
+    <main class="main" id="main">
+        <!--==== home-page =====-->
+
+        <section class="home-page" id="home-page">
+             <!--====================== Header ===================-->
+                <header class="header" id="header">
+                    <!--top-section-->
+                    <div class="top-section">
+                        <div class="container">
+                            <!--left-side-info-->
+                            <div class="left-side-info d-flex align-items-center">
+                                <div class="d-flex align-items-center h-100 me-3">
+                                    <i class='bx bxs-envelope px-1' ></i>
+                                    <a href="#" class="email">info@almenhaly.com</a>
+                                </div>
+                                <div class="d-flex align-items-center h-100">
+                                    <i class='bx bxs-phone px-1'></i>
+                                    <a href="#" class="phone">00971501563331</a>
+                                </div>
+                            </div>
+                            <!--right-side-icons-->
+                            <div class="right-side-icons d-flex align-items-center">
+                                <div class="follow-btn">
+                                    <a href="#">Fllow Up</a>
+                                </div>
+                                <div class="media-icons ps-3">
+                                    <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#" class="twitter"><i class='bx bxl-twitter' ></i></a>
+                                    <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                    <a href="#" class="ar ps-3"><img src="assets/img/home-img/ar.png" alt="ar img" width="25px" class="img-fluid"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End-top-section-->
+
+                    <!--Navbar-->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        <div class="container">
+                        <a class="navbar-brand" href="index.html"><img src="assets/img/logo/logo.png" alt="logo img" class="img-fluid"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="practice.html">Practice Area</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="atorney.html">Atorney</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                            </li>
+                            </ul>
+                            <div class="request-btn d-flex">
+                                <a href="#" class="button-hover mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Request Consultaion</a>
+                                <a href="#" class="button-hover">Company Profile</a>
+                            </div>
+                        </div>
+                        </div>
+                    </nav>
+                    <!--End-Navbar-->
+                </header>
+            <!--home-slider-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/img/home-img/home-img2.jpg" class="d-block img-fluid" alt="slide img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Welcome To Mohammed Al-Menhali Law Firm</p>
+                        <h1 class="ml12">Winning Is Our Signature</h1>
+                        <p>Let Mohammed Al- Menhali Advocates Take The Burden<br> Off Your Shoulder</p>
+                        <div class="home-page-btn">
+                            <a href="#" class="button-hover">Free Consultaion</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/home-img/home-img1.jpg" class="d-block img-fluid" alt="slide img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Welcome To Mohammed Al-Menhali Law Firm</p>
+                        <h2 class="ml10">
+                            <span class="text-wrapper">
+                              <span class="letters">Winning Is Our Signature</span>
+                            </span>
+                          </h2>
+                        <p>Let Mohammed Al- Menhali Advocates Take The Burden<br> Off Your Shoulder</p>
+                        <div class="home-page-btn">
+                            <a href="#" class="button-hover">Free Consultaion</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/home-img/home-img.jpg" class="d-block img-fluid" alt="slide img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Welcome To Mohammed Al-Menhali Law Firm</p>
+                          <h2 class="ml13">Winning Is Our Signature</h2>
+                        <p>Let Mohammed Al- Menhali Advocates Take The Burden<br> Off Your Shoulder</p>
+                        <div class="home-page-btn">
+                            <a href="#" class="button-hover">Free Consultaion</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+         <!--==================== SRVICES ==================-->
+         <section class="srvices home-page-items">
+             <div class="services-slider">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+                    </div>
+
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/img/services icons/criminal law1.svg" alt="criminal law img"><br>
+                        <a href="#">Criminal Law</a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/services icons/real-estate1.svg" alt="Real Estate img">
+                        <a href="#">Real Estate</a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/services icons/family law1.svg" alt="Family Law img">
+                        <a href="#">Family Law</a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/services icons/investement1.svg" alt="Investment img">
+                        <a href="#">Investment</a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/services icons/protection of rights1.svg" alt="Investment img">
+                        <a href="#">Civil Law</a>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+             </div>
+            <div class="container srvices-items">
+                <div class="srvices__content">
+                    <img src="assets/img/services icons/criminal law1.svg" class="about__img-one" alt="criminal law img">
+                    <a href="#">Criminal Law</a>
+                </div>
+                <div class="srvices__content">
+                    <img src="assets/img/services icons/real-estate1.svg"class="about__img-one" alt="Real Estate img">
+                    <a href="#">Real Estate</a>
+                </div>
+                <div class="srvices__content">
+                    <img src="assets/img/services icons/family law1.svg"class="about__img-one" alt="Family Law img">
+                    <a href="#">Family Law</a>
+                </div>
+                <div class="srvices__content">
+                    <img src="assets/img/services icons/labor1.svg"class="about__img-one" alt="Labour Law img">
+                    <a href="#">Labour Law</a>
+                </div>
+                <div class="srvices__content">
+                    <img src="assets/img/services icons/investement1.svg"class="about__img-one" alt="Investment img">
+                    <a href="#">Investment</a>
+                </div>
+                <div class="srvices__content">
+                    <img src="assets/img/services icons/protection of rights1.svg"class="about__img-one" alt="Investment img">
+                    <a href="#">Civil Law</a>
+                </div>
+            </div>
+ 
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about py-5" id="about">
+                    <div class="container">
+                     <div class="about__container row">
+                         <div class="about__data col-md-7">
+                             <div class="law-firm-info">
+                                 <h2 class="ml14">
+                                     <span class="text-wrapper">
+                                       <span class="letters">Mohammed Al-Menhali Law Firm</span>
+                                       <span class="line"></span>
+                                     </span>
+                                   </h2>
+                                 <p> 
+                                     We Are The Next Generation Of Lawyers Engineering Legal Services
+                                     According To The Needs Of Our Clients And Developing
+                                     Technology. Though We Are A Full Spectrum Emirati Law Firm, We
+                                     Have A Diverse, Experienced, And Multinational Group Of Lawyers &
+                                     Legal Consultants Which Give Us The Advantage Over Other Law<br>
+                                     Firms.
+                                 <br><br>
+                                     Our Strength Lies In A Complete Understanding Of The Regulatory,
+                                     Legal, And Commercial Changes Happening Across The Various
+                                     Industries. We Provide Bespoke Counsel To Help Our Clients
+                                     Achieve Their Objectives.
+                                 </p>
+                                 <div class="see-more-btn my-1">
+                                     <a href="#">See More</a>
+                                 </div>
+                              </div>
+                         </div>
+     
+                         <div class="about__img col-md-5 d-flex justify-content-center">
+                             <div class="about__img-overlay">
+                                 <img src="assets/img/about/contract.jpg" alt="" class="about__img-one img-fluid">
+                             </div>
+                         </div>
+                     </div>
+                    </div>
+        </section>
+
+        <!--==================== commitment ===============-->
+        <section class="commitment" id="commitment">
+            <div class="commitment-info">
+                <p>Commitment</p>
+                <p>The Firm Strongly Adheres That Each Case, Whether Small Or
+                Large, Will Be Given Full Attention And Details In Handling The
+                Same- Utmost Professional, Dedication And Knowledge Shall Be
+                Given To Each And Every Case.
+            </p>
+            </div>
+        </section>
+
+         <!--================ Our Best Lawyers ===============-->
+         <section class="best-lawyers" id="best-lawyers">
+            <div class="container">
+                <h2 class="ml14 text-center py-5">
+                    <span class="text-wrapper">
+                      <span class="letters" >Our Best Lawyers On The City</span>
+                      <span class="line"></span>
+                    </span>
+                  </h2>
+                <div class="best-layers-slider">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="assets/img/Atorneys/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg">
+                                </div>
+                                <div class="details">
+                                    <a href="#">Mohammed Saed</a>
+                                    <p>Lawyer</p>
+                                    <div class="media-icons-lawyers">
+                                        <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                        <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                        <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="assets/img/Atorneys/mehrad-vosoughi-iUQmEFtfdLw-unsplash.jpg">
+                                </div>
+                                <div class="details">
+                                    <a href="#">Mohammed Saed</a>
+                                    <p>Lawyer</p>
+                                    <div class="media-icons-lawyers">
+                                        <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                        <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                        <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="assets/img/Atorneys/pamela-buenrostro-1Ko-iILtrPI-unsplash.jpg">
+                                </div>
+                                <div class="details">
+                                    <a href="#">Mohammed Saed</a>
+                                    <p>Lawyer</p>
+                                    <div class="media-icons-lawyers">
+                                        <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                        <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                        <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="assets/img/Atorneys/pamela-buenrostro-bcXB5g48xbI-unsplash.jpg">
+                                </div>
+                                <div class="details">
+                                    <a href="#">Mohammed Saed</a>
+                                    <p>Lawyer</p>
+                                    <div class="media-icons-lawyers">
+                                        <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                        <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                        <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="assets/img/Atorneys/pamela-buenrostro-CSAEI7OGubA-unsplash.jpg">
+                                </div>
+                                <div class="details">
+                                    <a href="#">Mohammed Saed</a>
+                                    <p>Lawyer</p>
+                                    <div class="media-icons-lawyers">
+                                        <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                        <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                        <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="assets/img/Atorneys/steffen-wienberg-ml-pxK0Ovmw-unsplash.jpg">
+                                </div>
+                                <div class="details">
+                                    <a href="#">Mohammed Saed</a>
+                                    <p>Lawyer</p>
+                                    <div class="media-icons-lawyers">
+                                        <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                        <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                        <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-3 mt-2 lawyer">
+                    <div class="col">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="assets/img/Atorneys/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg">
+                            </div>
+                            <div class="details">
+                                <a href="#">Mohammed Saed</a>
+                                <p>Lawyer</p>
+                                <div class="media-icons-lawyers">
+                                    <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                    <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="assets/img/Atorneys/mehrad-vosoughi-iUQmEFtfdLw-unsplash.jpg">
+                            </div>
+                            <div class="details">
+                                <a href="#">Mohammed Saed</a>
+                                <p>Lawyer</p>
+                                <div class="media-icons-lawyers">
+                                    <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                    <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="assets/img/Atorneys/pamela-buenrostro-1Ko-iILtrPI-unsplash.jpg">
+                            </div>
+                            <div class="details">
+                                <a href="#">Mohammed Saed</a>
+                                <p>Lawyer</p>
+                                <div class="media-icons-lawyers">
+                                    <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                    <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="assets/img/Atorneys/pamela-buenrostro-bcXB5g48xbI-unsplash.jpg">
+                            </div>
+                            <div class="details">
+                                <a href="#">Mohammed Saed</a>
+                                <p>Lawyer</p>
+                                <div class="media-icons-lawyers">
+                                    <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                    <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="assets/img/Atorneys/pamela-buenrostro-CSAEI7OGubA-unsplash.jpg">
+                            </div>
+                            <div class="details">
+                                <a href="#">Mohammed Saed</a>
+                                <p>Lawyer</p>
+                                <div class="media-icons-lawyers">
+                                    <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                    <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="imgBx">
+                                <img src="assets/img/Atorneys/steffen-wienberg-ml-pxK0Ovmw-unsplash.jpg">
+                            </div>
+                            <div class="details">
+                                <a href="#">Mohammed Saed</a>
+                                <p>Lawyer</p>
+                                <div class="media-icons-lawyers">
+                                    <a href="#" class="facebook"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#" class="twitter"><i class='bx bxl-twitter px-3' ></i></a>
+                                    <a href="#" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--================ clients-says-about-us ================-->
+        <section class="clients-says my-5" id="clients-says">
+            <div class="container clients-says-info row">
+                <h2 class="ml14 text-center py-5">
+                    <span class="text-wrapper">
+                      <span class="letters" >What Our Clients Says About Us</span>
+                      <span class="line"></span>
+                    </span>
+                  </h2>
+              <div class="clients-says-content col-md-8">
+                  <p>The Firm Strongly Adheres That Each Case, Whether Small Or Large, Will Be Given Full
+                      Attention And Details In Handling The Same- Utmost Professional, Dedication And Knowledge
+                      Shall Be Given To Each And Every Case.
+                  </p>
+              </div>
+              <!-- Swiper -->
+              <div class="swiper mySwiper col-md-4">
+                  <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="assets/img/client/client1.jpg" class=" img-fluid my-3" alt="client img">
+                      <h4>Ahmed Mohammed</h4>
+                      <p>The Firm Strongly Adheres That Each Case, Whether Small Or Large, Will Be Given Full
+                          Attention And Details In Handling The Same- Utmost Professional, Dedication And Knowledge
+                          Shall Be Given To Each And Every Case.
+                       </p>
+                       <div class="rating-star">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                       </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="assets/img/client/client2.jpg" class=" img-fluid my-3" alt="client img">
+                      <h4>Ahmed Mohammed</h4>
+                      <p>The Firm Strongly Adheres That Each Case, Whether Small Or Large, Will Be Given Full
+                          Attention And Details In Handling The Same- Utmost Professional, Dedication And Knowledge
+                          Shall Be Given To Each And Every Case.
+                       </p>
+                       <div class="rating-star">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                       </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="assets/img/client/client3.jpg" class=" img-fluid my-3" alt="client img">
+                      <h4>Ahmed Mohammed</h4>
+                      <p>The Firm Strongly Adheres That Each Case, Whether Small Or Large, Will Be Given Full
+                          Attention And Details In Handling The Same- Utmost Professional, Dedication And Knowledge
+                          Shall Be Given To Each And Every Case.
+                       </p>
+                       <div class="rating-star">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                       </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="assets/img/client/client1.jpg" class=" img-fluid my-3" alt="client img">
+                      <h4>Ahmed Mohammed</h4>
+                      <p>The Firm Strongly Adheres That Each Case, Whether Small Or Large, Will Be Given Full
+                          Attention And Details In Handling The Same- Utmost Professional, Dedication And Knowledge
+                          Shall Be Given To Each And Every Case.
+                       </p>
+                       <div class="rating-star">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                       </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="assets/img/client/client2.jpg" class=" img-fluid my-3" alt="client img">
+                      <h4>Ahmed Mohammed</h4>
+                      <p>The Firm Strongly Adheres That Each Case, Whether Small Or Large, Will Be Given Full
+                          Attention And Details In Handling The Same- Utmost Professional, Dedication And Knowledge
+                          Shall Be Given To Each And Every Case.
+                       </p>
+                       <div class="rating-star">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                       </div>
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+        
+        <!--=============== our-latest-news ===============-->
+        <section class="our-latest-news my-5">
+            <div class="container">
+                <h2 class="ml14 text-center py-5">
+                    <span class="text-wrapper">
+                      <span class="letters" >Our Latest News</span>
+                      <span class="line"></span>
+                    </span>
+                  </h2>
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="col">
+                        <img src="assets/img/blog/luke-michael-DUV8TJtD2QY-unsplash.jpg" alt="blog img" class="img-fluid">
+                        <h5>The Management Structure Consists Of Lawyers.</h5>
+                        <p>The Firm Strongly Adheres That Each
+                            Case, Whether Small Or Large, Will Be
+                            Given Full Attention And Details.</p>
+                        <a href="#" class="read-more">Read more <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/blog/marten-bjork-6dW3xyQvcYE-unsplash.jpg" alt="blog img" class="img-fluid">
+                        <h5>The Management Structure Consists Of Lawyers.</h5>
+                        <p>The Firm Strongly Adheres That Each
+                            Case, Whether Small Or Large, Will Be
+                            Given Full Attention And Details.</p>
+                        <a href="#" class="read-more">Read more <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/blog/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg" alt="blog img" class="img-fluid">
+                        <h5>The Management Structure Consists Of Lawyers.</h5>
+                        <p>The Firm Strongly Adheres That Each
+                            Case, Whether Small Or Large, Will Be
+                            Given Full Attention And Details.</p>
+                        <a href="#" class="read-more">Read more<i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        
+        <!--========== our-special-clients ==========-->
+        <section class="our-special-clients" id="our-special-clients">
+            <div class="container py-5">
+                <h2 class="text-center py-3">Our Special Clients</h2>
+                <div class="special-clients-slider">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/img/client/company1.jpeg" alt="company img" class="img-fluid button-hover">
+                        </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/client/company2.jpeg" alt="company img" class="img-fluid button-hover">
+                        </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/client/company3.jpeg" alt="company img" class="img-fluid button-hover">
+                        </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/client/company4.jpeg" alt="company img" class="img-fluid button-hover">
+                        </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/client/company1.jpeg" alt="company img" class="img-fluid button-hover">
+                        </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/client/company2.jpeg" alt="company img" class="img-fluid button-hover">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/client/company3.jpeg" alt="company img" class="img-fluid button-hover">
+                        </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/client/company4.jpeg" alt="company img" class="img-fluid button-hover">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-3 xl-3 client-company">
+                    <div class="col company-sec">
+                        <img src="assets/img/client/company1.jpeg" alt="company img" class="img-fluid button-hover">
+                    </div>
+                    <div class="col company-sec">
+                        <img src="assets/img/client/company2.jpeg" alt="company img" class="img-fluid button-hover">
+                    </div>
+                    <div class="col company-sec">
+                        <img src="assets/img/client/company3.jpeg" alt="company img" class="img-fluid button-hover">
+                    </div>
+                    <div class="col company-sec">
+                        <img src="assets/img/client/company4.jpeg" alt="company img" class="img-fluid button-hover">
+                    </div>
+                    <div class="col company-sec">
+                        <img src="assets/img/client/company4.jpeg" alt="company img" class="img-fluid button-hover">
+                    </div>
+                    <div class="col company-sec">
+                        <img src="assets/img/client/company3.jpeg" alt="company img" class="img-fluid button-hover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============contact-us ===================-->
+        <section class="contact-us" id="contact-us">
+            <h2 class="ml14 text-center py-5">
+                <span class="text-wrapper">
+                  <span class="letters" >Contact Us</span>
+                  <span class="line"></span>
+                </span>
+              </h2>
+            <div class="container my-5">
+                <div class="row row-cols-1 row-cols-md-2 g-2 h-100 d-flex align-items-center">
+                    <div class="col">
+                        <img src="assets/img/home-img/contact-us.jpg" alt="contact-us" class="img-fluid button-hover">
+                    </div>
+                    <div class="col">
+                        <form class="row g-2 ">
+                            <div class="col-md-6 mt-5">
+                              <input type="text" class="form-control" id="" value="" placeholder="Name" required>
+                            </div>
+                            <div class="col-md-6 mt-5">
+                              <input type="phone" class="form-control" id="" value="" placeholder="Phone" required>
+                            </div>
+
+                            <div class="col-md-12 mt-5">
+                              <input type="email" class="form-control" id="" value="" placeholder="Email" required>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <textarea name="" id="" cols="20"  class="form-control" placeholder="Message"></textarea>
+                              </div>
+                        
+                            <div class="col-12 send-msg mt-5">
+                              <button class="btn button-hover" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--============map ===============-->
+        <section class="map" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.2783233189866!2d54.35630208500483!3d24.4758115842368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67f91f3dd61d%3A0x978774f6ca57b18d!2sSkilled%20Tech%20Information%20Technology%20Services!5e0!3m2!1sar!2s!4v1636012163299!5m2!1sar!2s" loading="lazy"></iframe>
+        </section>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+                <div class="container">
+                    <div class="row  row-cols-1 footer-info row-cols-md-4 g-4">
+                        <div class="col info">
+                            <img src="assets/img/logo/logo.png" alt="logo img" class="img-fluid">
+                            <p>MUHAMED ALMENHALI Is A Premium, Full
+                            Service Local And International Law Firm</p>
+                            <a href="#" class="email">
+                                <i class='bx bxs-envelope px-1' ></i>
+                                <p>info@almenhaly.com</p>
+                            </a>
+                            <a href="#" class="phone">
+                                <i class='bx bxs-phone px-1'></i>
+                                <p>00971501563331</p>
+                            </a>
+                            <a href="#" class="location px-1">
+                                <i class='bx bxs-map'></i>
+                                <p>Al Momoura, Al Faraa Building 
+                                    Floor No 10, Abu Dhabi- UAE</p>
+                            </a>
+                        </div>
+                        <div class="col footer-items">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Practice Areas</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Team</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">ontact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col footer-items">
+                            <ul>
+                                <li>
+                                    <a href="#">amily Law</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bissness Law</a>
+                                </li>
+                                <li>
+                                    <a href="#">Criminal Law</a>
+                                </li>
+                                <li>
+                                    <a href="#">Civil Law</a>
+                                </li>
+                                <li>
+                                    <a href="#">Finacal Law</a>
+                                </li>
+                                <li>
+                                    <a href="#">Finacal Law</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <p>atest News</p>
+                            <div class="footer-Lawyers d-flex">
+                                <img src="assets/img/footer/adeolu-eletu-E7RLgUjjazc-unsplash.jpg" alt="footer img" class="img-fluid">
+                                <p class="px-1">Highly Experienced Lawyers &
+                                Consultants</p>
+                            </div>
+                            <div class="footer-Lawyers d-flex mt-3">
+                                <img src="assets/img/footer/cytonn-photography-GJao3ZTX9gU-unsplash.jpg" alt="footer img" class="img-fluid">
+                                <p class="px-1">Highly Experienced Lawyers &
+                                Consultants</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                    <p>©Mohammed Al -Amenhali law firm © all rights reserved.2021</p>
+                    </div>
+                </div>
+         </footer>       
+    </main>
+    <!-- ================ End-Page-Content ================-->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Request Consultaion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-2 ">
+                        <div class="col-md-6 mt-5">
+                          <input type="text" class="form-control" id="" value="" placeholder="Name" required>
+                        </div>
+                        <div class="col-md-6 mt-5">
+                          <input type="phone" class="form-control" id="" value="" placeholder="Phone" required>
+                        </div>
+    
+                        <div class="col-md-12 mt-5">
+                          <input type="email" class="form-control" id="" value="" placeholder="Email" required>
+                        </div>
+    
+                        <div class="col-12 mt-5">
+                            <textarea name="" id="" cols="20"  class="form-control" placeholder="Message"></textarea>
+                          </div>
+                    
+                        <div class="col-12 send-msg mt-5 d-flex justify-content-center">
+                          <button class="btn button-hover" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>   
+   <!-- SCROLL REVEAL-->
+   <script src="assets/js/scrollreveal.min.js"></script>
+   <!-- SWIPER JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <!-- MAIN JS -->
+   <script src="assets/js/main.js"></script>
+   <!-- Bootstrap jqury&popper cdn Link -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
